@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.cryo2.cryo2.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_background"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+
+                <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_appereance"
+                android:theme="@style/TextLabel"
+                >
+
+                <EditText
+                    android:id="@+id/idLblNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_appereance5"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="@string/user_name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="102dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:transitionName="nameShareTrans"
+                    >
+                    <requestFocus></requestFocus> <!-- para que el foco este en name-->
+                </EditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlbEmpresa"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Empresa"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblPais"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Pais"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblCalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Calle"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblCodPostal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="CodigoPostal"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblCuenta"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Número de cuenta"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/buttonActualizarDatos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_registerappereance"
+                    android:text="Actualizar datos"
+                    tools:layout_editor_absoluteX="148dp"
+                    tools:layout_editor_absoluteY="311dp"
+                    android:transitionName="butSignShareTrans"
+                    />
+
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="85dp"
+                app:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_action_name" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

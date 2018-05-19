@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#9E9E9E</color>
+
+    <color name="colorLight">#f9b8e5fa</color>
+
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecundary">#757575</color>
+    <color name="dividerColor">#BDBDBD</color>
+
+    <color name="blackTrans">#40000000</color>
+
+    <color name="red">#d7fd1d1d</color>
+    <color name="redback">#92cc7272</color>
+    <color name="green">#d956bf00</color>
+    <color name="greenback">#8b93d65c</color>
+    <color name="colorLight2">#e9c4e7f7</color>
+    <color name="blanco">#fff</color>
+
+</resources>

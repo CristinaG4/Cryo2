@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.cryo2.cryo2.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_background"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="40dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Si quiere contactar con n osotros puede llamarnos al : 913333333, mandar un email a Incidencias@gmail.com o puede dejar su número o email junto con su mensaje para que contactemos con usted."/>
+                <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/text_appereance"
+                android:theme="@style/TextLabel"
+                >
+
+
+                <EditText
+                    android:id="@+id/idLblEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/text_appereance5"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="102dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:transitionName="nameShareTrans"
+                    >
+                    <requestFocus></requestFocus> <!-- para que el foco este en name-->
+                </EditText>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:id="@+id/idlblNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:ems="10"
+                        android:hint="Teléfono"
+                        android:inputType="textPassword"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp" />
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    android:background="@drawable/text_appereance"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp">
+                    <EditText
+                        android:gravity="top|left"
+
+                        android:id="@+id/idlbContact"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/text_appereance5"
+                        android:drawableLeft="@drawable/ic_business_black_24dp"
+                        android:drawablePadding="8dp"
+                        android:scrollbars="vertical"
+                        android:ems="10"
+                        android:hint="Escribe tu pregunta: "
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/textColorSecundary"
+                        android:textColorHint="@color/colorLight"
+                        tools:layout_editor_absoluteX="66dp"
+                        tools:layout_editor_absoluteY="155dp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonHacerPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/button_registerappereance"
+                android:text="Mandar e-mail"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="311dp"
+                android:transitionName="butSignShareTrans"
+                />
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>
